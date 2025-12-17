@@ -1,0 +1,172 @@
+.account-reopen-section {
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-area {
+  margin-bottom: 20px;
+}
+
+.input-area h4 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.membership-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.input-label {
+  font-weight: 500;
+  color: #34495e;
+  font-size: 0.95em;
+}
+
+.membership-input {
+  padding: 12px 16px;
+  border: 2px solid #e0e6ed;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+  transition: all 0.3s ease;
+  max-width: 400px;
+}
+
+.membership-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  background: #fdfdff;
+}
+
+.membership-input::placeholder {
+  color: #a0a6b1;
+}
+
+.membership-summary {
+  padding: 12px 16px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  max-width: 400px;
+}
+
+.membership-summary p {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 0.95em;
+}
+
+.script-output {
+  margin-top: 25px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.script-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.script-header h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.script-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.copy-btn,
+.download-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.copy-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.copy-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4);
+}
+
+.script-textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e0e6ed;
+  border-radius: 8px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  background: #f8f9fa;
+  color: #2c3e50;
+  resize: vertical;
+  min-height: 150px;
+}
+
+.script-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .account-reopen-section {
+    padding: 15px;
+  }
+  
+  .script-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .script-actions {
+    justify-content: center;
+  }
+  
+  .membership-input {
+    max-width: 100%;
+  }
+  
+  .membership-summary {
+    max-width: 100%;
+  }
+}
